@@ -1,23 +1,45 @@
 :root {
-	--color-iris: #4d5ae5;
-	--color-ocean: #404bbf;
-	--color-navy-blue: #2e2f42;
-	--color-green: #31d0aa;
-	--color-slate: #434455;
-	--color-light-slate: #8e8f99;
-	--color-cornflower: #e7e9fc;
-	--color-cloud: #f4f4fd;
-	--color-navy-blue-modal: #2e2f42;
-	--color-grey: #2e2f42;
+  --color-iris: #4d5ae5;
+  --color-ocean: #404bbf;
+  --color-navy-blue: #2e2f42;
+  --color-green: #31d0aa;
+  --color-slate: #434455;
+  --color-light-slate: #8e8f99;
+  --color-cornflower: #e7e9fc;
+  --color-cloud: #f4f4fd;
+  --color-navy-blue-modal: #2e2f42;
+  --color-grey: #2e2f42;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
 }
 
 body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
-  color: #434455
-  
+  color: #434455;
 }
- 
+
 .link {
   text-decoration: none;
 }
@@ -26,9 +48,31 @@ body {
   list-style: none;
 }
 
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.container {
+  width: 1440px;
+  padding-left: 200px;
+  padding-right: 200px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
 
 /* ---------- HEADER ------------ */
-/* header-logo */
+
+.header-container {
+  height: 72px;
+  padding: 24px 156px;
+  
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -38,13 +82,12 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color:var(--color-iris);
-}
-.logo-color {
-  color:var(--color-navy-blue);
+  color: var(--color-iris);
 }
 
-/* header-link */
+.logo-color {
+  color: var(--color-navy-blue);
+}
 
 .header-link {
   font-family: inherit;
@@ -52,16 +95,12 @@ body {
   font-size: 16px;
   line-height: 1.5em;
   letter-spacing: 0.02em;
-  color:var(--color-navy-blue);
-  
+  color: var(--color-navy-blue);
 }
-.header-link:is(:hover,:focus) {
+.header-link:is(:hover, :focus) {
   color: #404bbf;
 }
-/* header-address */
-.address {
-  font-style: normal;
-}
+
 .header-address {
   font-weight: 400;
   font-size: 16px;
@@ -70,13 +109,15 @@ body {
   color: #434455;
 }
 
-.header-address:is(:hover,:focus)
- {
+.header-address:is(:hover, :focus) {
   color: #404bbf;
 }
 
 /* ----------- HERO ------------- */
 
+.hero-container {
+  height: 600px;
+}
 .hero {
   background-color: #2e2f42;
 }
@@ -90,19 +131,22 @@ body {
 }
 
 /*-------------- section 1 ------------*/
+.feature-container {
+  height: ;
+}
+
 .feature-title {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.20;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  
 }
 
 .feature-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.50;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
@@ -123,21 +167,18 @@ body {
   border: 1px solid #e7e9fc;
 }
 
-.doing-title {color: #2e2f42;}
-
-/* ---------team------------------ */
-
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  
+.doing-title {
+  color: #2e2f42;
 }
 
-.team-title {color: #2e2f42;}
+/* ---------team------------------ */
+.team-container {
+  height: 732px;
+}
+
+.team-title {
+  color: #2e2f42;
+}
 
 .team-img {
   width: 264px;
@@ -153,10 +194,9 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
-
 }
 .team-item-text {
-    font-size: 16px;
+  font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
@@ -175,13 +215,12 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  cursor: pointer;
   color: #404bbf;
- 
 }
 .button-text:is(:hover, :focus) {
   color: #ffffff;
 }
+
 /* ---------row-------------- */
 
 .row-img {
@@ -205,24 +244,28 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  
 }
+
 .row-text {
-  
   font-size: 16px;
-  line-height: 1.50;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
 
 /* ----------footer----------- */
+.footer-container {
+  height: 312px;
+
+}
+
 .footer-text {
-  
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #e7e9fc;
 }
+
 .footer {
   background: #2e2f42;
 }
@@ -238,7 +281,7 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
 }
-.footer-logo-color {
-  color:#f4f4fd;
-}
 
+.footer-logo-color {
+  color: #f4f4fd;
+}
