@@ -1,4 +1,14 @@
 :root {
+	--color-iris: #4d5ae5;
+	--color-ocean: #404bbf;
+	--color-navy-blue: #2e2f42;
+	--color-green: #31d0aa;
+	--color-slate: #434455;
+	--color-light-slate: #8e8f99;
+	--color-cornflower: #e7e9fc;
+	--color-cloud: #f4f4fd;
+	--color-navy-blue-modal: #2e2f42;
+	--color-grey: #2e2f42;
 }
 
 body {
@@ -16,10 +26,6 @@ body {
   list-style: none;
 }
 
-.pointer {
-  cursor: pointer;
-}
-
 
 /* ---------- HEADER ------------ */
 /* header-logo */
@@ -32,10 +38,10 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color:var(--color-iris);
 }
 .logo-color {
-  color: #2e2f42;
+  color:var(--color-navy-blue);
 }
 
 /* header-link */
@@ -46,11 +52,10 @@ body {
   font-size: 16px;
   line-height: 1.5em;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color:var(--color-navy-blue);
   
 }
-.header-link:hover,
-.header-link:focus {
+.header-link:is(:hover,:focus) {
   color: #404bbf;
 }
 /* header-address */
@@ -65,7 +70,7 @@ body {
   color: #434455;
 }
 
-.header-address:hover, .header-address:focus
+.header-address:is(:hover,:focus)
  {
   color: #404bbf;
 }
@@ -118,19 +123,21 @@ body {
   border: 1px solid #e7e9fc;
 }
 
+.doing-title {color: #2e2f42;}
+
 /* ---------team------------------ */
 
-.doing-title,
-.team-title {
+.title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
- 
+  
 }
+
+.team-title {color: #2e2f42;}
 
 .team-img {
   width: 264px;
@@ -168,9 +175,13 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
+  cursor: pointer;
+  color: #404bbf;
  
 }
-
+.button-text:is(:hover, :focus) {
+  color: #ffffff;
+}
 /* ---------row-------------- */
 
 .row-img {
