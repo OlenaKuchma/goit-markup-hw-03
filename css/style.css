@@ -58,9 +58,9 @@ body {
 }
 
 .container {
-  width: 1440px;
-  padding-left: 200px;
-  padding-right: 200px;
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
   outline: 2px solid red;
 }
@@ -68,8 +68,7 @@ body {
 /* ---------- HEADER ------------ */
 
 .header-container {
-  height: 72px;
-  padding: 24px 156px;
+  padding: 24px 0px;
   
 }
 
@@ -83,11 +82,13 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-iris);
-}
+  margin-right: 76px;
 
+}
 .logo-color {
   color: var(--color-navy-blue);
 }
+
 
 .header-link {
   font-family: inherit;
@@ -96,7 +97,10 @@ body {
   line-height: 1.5em;
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
+  margin-right: 40px;
 }
+
+
 .header-link:is(:hover, :focus) {
   color: #404bbf;
 }
@@ -107,6 +111,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-right: 40px;
 }
 
 .header-address:is(:hover, :focus) {
@@ -116,10 +121,8 @@ body {
 /* ----------- HERO ------------- */
 
 .hero-container {
-  height: 600px;
-}
-.hero {
   background-color: #2e2f42;
+  padding: 188px 316px 292px;
 }
 .hero-title {
   font-weight: 700;
@@ -128,20 +131,28 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-bottom: 48px;
 }
+.hero-button {
+  
+ }
 
 /*-------------- section 1 ------------*/
-.feature-container {
-  height: ;
-}
 
+.feature-item {
+  height: 104px;
+  width: 264px;
+  margin-right: 24px;
+ 
+}
 .feature-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-}
+  margin-bottom: 8px;
+  }
 
 .feature-text {
   font-weight: 400;
@@ -151,7 +162,14 @@ body {
   color: #434455;
 }
 
+.feature-container {
+  padding: 120px 0px;
+}
+
 /* -------------doing-------------- */
+.doing-container {
+  padding: 0;
+}
 
 .doing-item {
   box-sizing: border-box;
@@ -165,27 +183,31 @@ body {
     url(2368.jpg);
   background-blend-mode: soft-light, normal;
   border: 1px solid #e7e9fc;
+  margin-right: 24px;
 }
+
 
 .doing-title {
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 /* ---------team------------------ */
 .team-container {
-  height: 732px;
+  padding: 70px 0px 170px ;
 }
-
+.team-item {
+   margin-right: 24px;
+}
 .team-title {
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .team-img {
   width: 264px;
   height: 260px;
-  background: url(confident-handsome-guy-posing-against-white-wall.jpg);
-  mix-blend-mode: normal;
-}
+  }
 
 .team-item-title {
   font-weight: 500;
@@ -204,7 +226,13 @@ body {
 }
 
 /* ------filters--------- */
-
+.filters-list {
+  padding-top: 96px 271px 0px;
+  margin-bottom: 72px;
+}
+.filters-list-item {
+  margin-right: 24px;
+}
 .button-text {
   font-weight: 500;
   font-family: "Roboto", sans-serif;
@@ -223,6 +251,12 @@ body {
 
 /* ---------row-------------- */
 
+.row-list {
+  margin-bottom: 48px;
+}
+.row-item {
+  margin-right: 24px;
+}
 .row-img {
   width: 360px;
   height: 300px;
@@ -255,8 +289,7 @@ body {
 
 /* ----------footer----------- */
 .footer-container {
-  height: 312px;
-
+  padding: 43px 864px 100px 0px;
 }
 
 .footer-text {
@@ -280,6 +313,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-bottom: 16px;
 }
 
 .footer-logo-color {
