@@ -305,7 +305,7 @@ body {
 .row-item {
   width: 360px;
   height: 468px;
-  border-bottom: 48px;
+  border-bottom: 48px solid #ffffff;
   }
 
 .row-img {
