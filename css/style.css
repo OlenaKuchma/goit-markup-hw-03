@@ -295,18 +295,18 @@ body {
 /* ---------row-------------- */
 
 .row-list {
-  margin-bottom: 48px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: stretch;
   justify-content: space-between;
+  
 }
 .row-item {
   width: 360px;
-  height: 420px;
-  margin-bottom: 48px;
-}
+  height: 468px;
+  border-bottom: 48px;
+  }
 
 .row-img {
   width: 360px;
@@ -330,6 +330,8 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-left: 16px;
+  margin-bottom: 8px;
 }
 
 .row-text {
@@ -337,6 +339,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-left: 16px;
+  margin-bottom: 32px;
 }
 
 /* ----------footer----------- */
